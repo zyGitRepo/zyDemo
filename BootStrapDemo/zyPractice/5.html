@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--移动端设备优先-->
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>栅格系统</title>
+		<!--<link rel="stylesheet" href="../dist/css/bootstrap-theme.min.css" />-->
+		<link rel="stylesheet" href="../dist/css/bootstrap.min.css" />
+		<script type="text/javascript" src="../jquery.min.js"></script>
+		<script type="text/javascript" src="../dist/js/bootstrap.min.js" ></script>
+		<style type="text/css">
+			.a{
+				height: 50px;
+				border: solid 1px #ccc;
+				background-color: #eee;
+			}
+		</style>
+	</head>
+	<body style="margin: 50px;">
+		<!--lesson 5-->
+		<!--移动端设备优先，加下边这行-->
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">-->
+		<!--100%宽度-->
+		<!--<div class="container-fluid a">
+		...
+		</div>-->
+		<!--固定宽度-->
+		<div class="container a">
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">4</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 a">8</div>
+				<!--可以设置列偏移，让中间保持空隙-->
+				<div class="col-md-3 col-md-offset-1 a">3</div>
+			</div>
+			<div class="row">
+				<div class="col-md-9 a" style="padding: 0;">
+					<!--可以嵌套，嵌满也是 12 列-->
+					<div class="col-md-8 a">1-8</div>
+					<div class="col-md-4 a">9-12</div>
+				</div>
+				<div class="col-md-3 a">
+					11-12
+				</div>
+			</div>
+			<div class="row">
+				<!--可以把两个列交换位置，push 向左移动，pull 向右移动-->
+				<div class="col-md-9 col-md-push-3 a">9</div>
+				<div class="col-md-3 col-md-pull-9 a">3</div>
+			</div>
+		</div>		
+	</body>
+</html>

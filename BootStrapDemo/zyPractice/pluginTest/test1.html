@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../dist/css/bootstrap.min.css" />
+	</head>
+	<body>
+		<script type="text/javascript" src="../../jquery.min.js"></script>
+		<script type="text/javascript" src="../../dist/js/bootstrap.min.js" ></script>
+		<script type="text/javascript">
+			// 返回 $.fn.button 之前所赋的值
+			var bootstrapButton = $.fn.button.noConflict() 
+			// 为 $().bootstrapBtn 赋予 Bootstrap 功能                           
+			$.fn.bootstrapBtn = bootstrapButton   
+		</script>
+	</body>
+</html>

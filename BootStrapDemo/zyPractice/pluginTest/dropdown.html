@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Bootstrap 下拉菜单（Dropdown）插件</title>
+		<link rel="stylesheet" href="../../dist/css/bootstrap.min.css" />
+	</head>
+	<body style="margin: 10px;">
+		
+		<!--声明式用法-->
+		<div class="dropdown" id="myDropdown">
+			<button id="btn" class="btn btn-primary" data-toggle="dropdown" data-target="#myDropdown"> 
+			<!--<button id="btn" class="btn btn-primary">-->
+				下拉菜单
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">产品</a></li>
+				<li><a href="#">资讯</a></li>
+				<li><a href="#">关于</a></li>
+			</ul>
+		</div>
+		
+		
+				
+		
+		<script type="text/javascript" src="../../jquery.min.js"></script>
+		<script type="text/javascript" src="../../dist/js/bootstrap.min.js" ></script>
+		<script type="text/javascript">
+			
+			//不好用的两个方法
+			//$('#btn').dropdown();
+			//$('#btn').dropdown('toggle');
+			
+			/*下拉菜单的事件，举例说明，其他雷同*/
+			$('#myDropdown').on('show.bs.dropdown', function () {
+				alert('在调用 show 方法时立即触发！');
+			});
+		</script>
+	</body>
+</html>
