@@ -13,7 +13,7 @@ import org.springframework.web.method.HandlerMethod;
  * @see [相关类/方法]
  * @since [产品/模块版本]
  */
-//@ControllerAdvice   //为测试错误页面跳转，临时注释掉
+//@ControllerAdvice(basePackages = "com.example.controller")   //为测试错误页面跳转，临时注释掉
 public class ErrControllerAdvice {
 
     @ExceptionHandler(Exception.class)
